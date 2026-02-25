@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext"  //컴파일하여 생성되는 JS의 버전 설정
+    ,"skipLibCheck": true 
+    // @types 버전이 20버전 이상으로 업데이트되면서 특정 라이브러리에서 타입 검사 오류가 발생하고 있습니다.
+    //따라서 tsconfig.json에 compilerOption 내부에 skipLibCheck 옵션을 추가 해 주시기 바랍니다
+    , "module": "ESNext" 
+    //(option : ESNext or CommonJs) export import 의 형식을 지정한다(기본적으로 ESNext이나 CJS로 설정시 생성된 js 값에 관련 문법이 적용된다)
+    , "outDir": "dist" //컴파일시 생성된 js파일들의 경로 지정
+    , "strict": true  //TS가 코드를 아주 엄격하게 검사하도록 지정
+    , "moduleDetection": "force" 
+    // force : 각 ts파일을 독립모듈로 설정한다
+    // legacy : 각 ts파일을 전역(글로벌) 모듈로 설정(하나의 파일인것으로) 각 파일에서 동일 변수를 사용할 수 없다
+  },
+
+  "include": ["src"] //컴파일 경로 지정, src 하위에 있는 모든 파일을 컴파일 한다
+
+}
