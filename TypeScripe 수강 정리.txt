@@ -182,3 +182,31 @@ Any
 모든 타입을 할당할 수 있다
 런타임시 오류 발생가능성이 높다
 
+
+---
+
+타입스크립트 이해하기
+
+* 타입은 집합이다
+
+let num1: number = 10; //number type
+let num2: 10 = 10; //number literal type
+
+number type은 number literal type의 부모집합이다
+
+num1 = num2 (o) (up Cast)
+num2 = num1 (x) (down Cast)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
