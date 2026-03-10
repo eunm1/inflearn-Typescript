@@ -20,6 +20,8 @@ function func(value: number | string | Date | null | Person){
     // value.toUpperCase() //오류 발생
 
     //타입 좁히기
+    // `typeof`, `instanceof`, `in` 연산자는 런타임에 타입을 좁히는 데 사용돼요.
+    // 리터럴 타입 자체는 타입 좁히기 방법이 아닌 타입의 한 종류입니다.
     if(typeof value === "number"){
         console.log(value.toFixed())
         return value.toFixed()
